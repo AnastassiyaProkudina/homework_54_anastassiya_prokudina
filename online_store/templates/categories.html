@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Categories{% endblock %}
+{% block content %}
+    {%  for category in categories %}
+        <div class="categories">
+            <div class="card border-dark">
+                <div class="row g-0">
+                    <div class="col-md-9">
+                        <a href="{% url 'category_detail' category.id %}" class="category-show">{{ category.title }}</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{% url 'category_edit' category.id %}" class="categories-btn btn btn-dark">Edit</a>
+                        <a href="{% url 'category_delete' category.id %}" class=" categories-btn btn btn-dark">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+

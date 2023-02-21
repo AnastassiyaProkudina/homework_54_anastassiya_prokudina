@@ -1,0 +1,117 @@
+* {
+    font-family: 'Signika', sans-serif;
+    color: #343a40;
+}
+.container {
+    margin: 0;
+    width:  1175px;
+    background-color: #808080;
+    height: 2000px;
+}
+.navbar {
+    display: block;
+    background: blueviolet;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 0;
+    box-sizing: border-box;
+}
+.menu {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    display: inline-block;
+    width:  100%;
+    background-color: blueviolet;
+}
+.navbar-brand{
+    font-size: 20px;
+}
+.menu li {
+    display: inline-block;
+}
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 15px;
+}
+.menu a:hover {
+    color: #ffc122;
+    text-decoration: underline;
+}
+/*for products.html, product.html*/
+.box{
+    margin-top: 20px;
+}
+.online-store {
+    background-color: blueviolet;
+    margin: 20px 42px;
+    padding: 42px;
+    width: 470px;
+    height: 280px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    display: inline-block;
+}
+.picture{
+    max-width: 170px;
+    max-height: 170px;
+    margin: 0 auto;
+}
+.card-title, .price{
+    font-weight: bold;
+}
+.card-body{
+    text-align: left;
+}
+p {
+    font-size: 16px;
+}
+.card_small_text{
+    font-size: 12px;
+}
+.category{
+    font-size: 14px;
+    color: #343a40;
+    text-decoration: none;
+}
+.link{
+    color: darkviolet;
+}
+/*for product_create.html, product_edit.html, category_create.html*/
+.form{
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.form-row{
+    margin: 12px auto;
+}
+/*for categories.html, category.html*/
+.categories{
+    background-color: blueviolet;
+    margin-top: 12px;
+    padding: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.categories-btn{
+    margin: 10px;
+}
+.category-show{
+    font-size: 20px;
+    color: #343a40;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.category_buttons{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Product Edit{% endblock %}
+{% block content %}
+    <div class="form" xmlns="http://www.w3.org/1999/html">
+        <h4>Edit Product</h4>
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-row">
+                    <label>
+                        <input type="text" name="title" value="{{product.title}}" placeholder="{{product.title}}"/>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <input type="text" name="price" value="{{product.price}}" placeholder="{{product.price}}"/>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <input type="text" name="image" value="{{product.image}}" placeholder="{{product.image}}"/>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <select name="category_id">
+                        <option disabled selected>Category</option>
+                        {% for category in categories %}
+                            <option value="{{ category.pk }}">{{ category.title}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="description">
+                        <textarea rows="10" cols="21" name="description" value="{{product.description}}" placeholder="{{product.description}}"></textarea>
+                    </label>
+                </div>
+                <input type="submit" value="Edit product" class="btn btn-dark">
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Product Create{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="form">
+            <h4>Edit Category</h4>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                    <label>
+                        <input type="text" name="title" value="{{category.title}}" placeholder="{{category.title}}"/>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <textarea rows="10" cols="21" name="description" value="{{category.description}}" placeholder="{{category.description}}"></textarea>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Save" class="btn btn-dark">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
