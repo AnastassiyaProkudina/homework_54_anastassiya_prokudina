@@ -1,0 +1,96 @@
+[
+{
+  "model": "online_store.category",
+  "pk": 1,
+  "fields": {
+    "title": "Pharmacy",
+    "description": "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea"
+  }
+},
+{
+  "model": "online_store.category",
+  "pk": 2,
+  "fields": {
+    "title": "Food",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+},
+{
+  "model": "online_store.category",
+  "pk": 3,
+  "fields": {
+    "title": "Car",
+    "description": "Nibh nisl condimentum id venenatis a condimentum vitae. Condimentum id venenatis a condimentum vitae sapien pellentesque. Dui nunc mattis enim ut tellus elementum sagittis vitae et. "
+  }
+},
+{
+  "model": "online_store.product",
+  "pk": 3,
+  "fields": {
+    "title": "Patch",
+    "description": "Пластырь медицинский на тканевой основе №10 Dr.Frei\nДля оказания первой медицинской помощи при мелких ссадинах, порезах и царапинах.",
+    "category": 1,
+    "created_at": "2023-02-21T16:04:59.849Z",
+    "updated_at": "2023-02-21T16:05:05.659Z",
+    "price": "2.02",
+    "image": "https://admin.dr-house.kz/files/cache/front/400x400/d2/77/41/pal-1.png"
+  }
+},
+{
+  "model": "online_store.product",
+  "pk": 10,
+  "fields": {
+    "title": "Meat",
+    "description": "Fresh meat",
+    "category": 2,
+    "created_at": "2023-02-21T10:25:47.322Z",
+    "updated_at": "2023-02-21T11:52:29.386Z",
+    "price": "24.00",
+    "image": "https://vgmeats.ca/content/uploads/vgs-big-beef-sale-is-back.jpg"
+  }
+},
+{
+  "model": "online_store.product",
+  "pk": 12,
+  "fields": {
+    "title": "Corn",
+    "description": "Corn Corn Corn",
+    "category": 2,
+    "created_at": "2023-02-21T10:36:33.579Z",
+    "updated_at": "2023-02-21T11:57:00.742Z",
+    "price": "3.85",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezKWtHDUX3jeQkEXw8t619RI9aRy5Q3V8Tw&usqp=CAU"
+  }
+},
+{
+  "model": "online_store.product",
+  "pk": 14,
+  "fields": {
+    "title": "Lexus GS",
+    "description": "Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor.",
+    "category": 3,
+    "created_at": "2023-02-21T11:15:06.857Z",
+    "updated_at": "2023-02-21T11:47:44.056Z",
+    "price": "84900.00",
+    "image": "https://l1-cms-2.images.lexus-europe.com/lexusone/lexruruv11/Lexus-RX_tcm-3173-1803901.png"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$nASzzNcW78k4HrUGD7cRY1$Oh+FozOeL2s7XFGDsgd8JsEfrMsDpkWjdhF1IsjQijg=",
+    "last_login": "2023-02-21T10:24:36.214Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-02-20T21:31:13.200Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
